@@ -1,6 +1,6 @@
 // import { Switch, Route, Link } from 'react-router-dom';
 // import { Layout, Typography, Space } from 'antd';
-import { Navbar } from './components/index';
+import { Navbar } from './components';
 
 
 export default function App() {
