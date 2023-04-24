@@ -1,9 +1,20 @@
-import './App.css'
+// import { Switch, Route, Link } from 'react-router-dom';
+// import { Layout, Typography, Space } from 'antd';
+import { Navbar } from './components/index';
+
 
 export default function App() {
   return (
-    <>
-      <h1>BlackChain</h1>
-    </>
+    <div className="app">
+      <div className="navbar">
+        <Navbar />
+      </div>
+      <div className="main">
+
+      </div>
+      <div className="footer">
+
+      </div>
+    </div>
   )
 }
