@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="nav-container">
             <div className="logo-container">
                 <Avatar src={icon} size="large" />
-                <Typography.Title level={2} className="logo">
+                <Typography.Title level={3} className="logo">
                     <Link to="/">BlackChain</Link>
                 </Typography.Title>
                 {/* <Button className='Menu-control-container'>
