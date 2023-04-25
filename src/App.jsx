@@ -1,12 +1,9 @@
-import './App.css'
+import './App.css';
 
 export default function App() {
-
-
   return (
     <>
-      <h1>BlackChain</h1>
+      <h1>blackchain</h1>
     </>
   )
 }
-
