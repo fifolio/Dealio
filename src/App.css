@@ -25,7 +25,7 @@ a:hover{
 
 .navbar{
     flex: 0.2;
-    /* background-color: rgb(0, 21, 41); */
+    background-color: #0F0F0F;
 }
 
 .main{
@@ -42,21 +42,22 @@ a:hover{
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: rgb(0, 21, 41);
+    background-color: #0F0F0F;
 }
 
 .logo-container{
-    background-color: #001529;
+    background-color: #0F0F0F;
     display: flex;
     padding: 20px;
     align-items: center;
     width: 100%;
 }
 .logo{
-    margin:0 0 0 15px;
+    margin:15px 0 0 15px;
 }
 .logo a{
    color: white;
+   font-family: serif;
 }
 .menu-control-container{
     display: none !important;
@@ -371,7 +372,7 @@ width: 70%;
 }
 
 .footer {
-    /* background-color: #001529; */
+    background-color: #0F0F0F;
     display: flex;
     flex-direction: column;
     padding: 20px;

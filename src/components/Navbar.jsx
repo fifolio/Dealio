@@ -16,7 +16,7 @@ export default function Navbar() {
                     <Link to="/">BlackChain</Link>
                 </Typography.Title>
             </div>
-            <Menu theme='dark'>
+            <Menu style={{ background: '#0F0F0F', color: 'white' }}>
                 <Menu.Item icon={<HomeOutlined />}>
                     <Link to="/" element={<Homepage />}>Home</Link>
                 </Menu.Item>
