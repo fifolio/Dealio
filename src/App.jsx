@@ -1,10 +1,11 @@
 import './App.css'
+import Pages from './components/common/home/pages/Pages'
 
 export default function App() {
 
   return (
     <>
-      <h1>Dealio</h1>
+      <Pages />
     </>
   )
 }
