@@ -1,7 +1,20 @@
-import React from 'react'
+import logo from "../assets/images/logo.png";
 
 export default function Header() {
     return (
-        <div>Header</div>
+        <>
+            <header>
+                <div className="container">
+                    <nav>
+                        <div className="toggle">
+                            <button>menu</button>
+                        </div>
+                        <div className="left">
+                            <img src={logo} alt="logo" />
+                        </div>
+                    </nav>
+                </div>
+            </header>
+        </>
     )
 }
