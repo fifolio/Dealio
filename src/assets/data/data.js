@@ -58,7 +58,7 @@ export const hero = [
 export const products = [
     {
         id: 1,
-        cover: "../images/product/1-1-1.jpg",
+        cover: "/src/assets/data/images/products/1.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: 30.0,
@@ -67,7 +67,7 @@ export const products = [
     },
     {
         id: 2,
-        cover: "../images/product/2-1-1.jpg",
+        cover: "/src/assets/data/images/products/2.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: 10.0,
@@ -76,7 +76,7 @@ export const products = [
     },
     {
         id: 3,
-        cover: "../images/product/3-1-1.jpg",
+        cover: "/src/assets/data/images/products/3.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: 20.0,
@@ -85,7 +85,7 @@ export const products = [
     },
     {
         id: 4,
-        cover: "../images/product/4-3.jpg",
+        cover: "/src/assets/data/images/products/4.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: 40.0,
@@ -94,7 +94,7 @@ export const products = [
     },
     {
         id: 5,
-        cover: "../images/product/5-1-1.jpg",
+        cover: "/src/assets/data/images/products/5.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "50.00",
@@ -103,7 +103,7 @@ export const products = [
     },
     {
         id: 6,
-        cover: "../images/product/6-3.jpg",
+        cover: "/src/assets/data/images/products/6.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
@@ -112,7 +112,7 @@ export const products = [
     },
     {
         id: 7,
-        cover: "../images/product/7-1-1.jpg",
+        cover: "/src/assets/data/images/products/7.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
@@ -121,7 +121,7 @@ export const products = [
     },
     {
         id: 8,
-        cover: "../images/product/8-1.jpg",
+        cover: "/src/assets/data/images/products/8.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
