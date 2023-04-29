@@ -1,26 +1,37 @@
 import { Link } from "react-router-dom";
 import { navlist } from "../../assets/data/data";
+import { BiSearch } from 'react-icons/bi';
+import { BsBagCheck } from 'react-icons/bs'
+import { RiUser3Line } from 'react-icons/ri';
+import { AiOutlineClose, AiOutlineHeart, AiOutlineMenu } from 'react-icons/ai';
 import logo from "../assets/images/logo.png";
-import { BiSearch } from 'react-icons/bi'
-import { RiUser3Line } from 'react-icons/ri'
-import { AiOutlineHeart } from 'react-icons/ai'
-
-
+import { useState } from "react";
 
 export default function Header() {
+
+    window.addEventListener("scroll", function () {
+        const header = this.document.querySelector(".header");
+
+        header.classList.toggle("active", this.window.screenY > 100)
+    })
+
+    const [mobile, setMobile] = useState(false)
+
     return (
         <>
-            <header>
+            <header className="header">
                 <div className="container">
                     <nav>
                         <div className="toggle">
-                            <button>menu</button>
+                            <button onClick={() => setMobile(!mobile)}>
+                                {mobile ? <AiOutlineClose className="close heIcon" /> : <AiOutlineMenu className="open heIcon" />}
+                            </button>
                         </div>
                         <div className=" left">
                             <img src={logo} alt="" />
                         </div>
                         <div className="center">
-                            <ul className="menu">
+                            <ul className={mobile ? "mobile-nav" : "menu"}>
                                 {navlist.map((nav, index) => (
                                     <li key={index}>
                                         <Link to={nav.path}>
@@ -39,6 +50,15 @@ export default function Header() {
                         <div className="right_user">
                             <RiUser3Line className='userIcon heIcon' />
                             <AiOutlineHeart className='userIcon heIcon' />
+                        </div>
+                        <div className="right_card">
+                            <button className="button">
+                                <BsBagCheck className="shop heIcon" />
+                                MY CART (0)
+                            </button>
+
+
+
                         </div>
                     </div>
                 </div >
