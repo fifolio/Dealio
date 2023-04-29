@@ -10,47 +10,47 @@ export const navlist = [
         text: "shop",
         path: "/shop",
     },
-    {
-        text: "about us",
-        path: "/about",
-    },
+    // {
+    //     text: "about us",
+    //     path: "/about",
+    // },
     {
         text: "blog",
         path: "/blog",
     },
-    {
-        text: "contact us",
-        path: "/contact",
-    },
+    // {
+    //     text: "contact us",
+    //     path: "/contact",
+    // },
 ]
 export const hero = [
     {
         id: 1,
-        cover: "../images/hero/cate-h11_1.png",
+        cover: "/src/assets/data/images/hero/1.png",
         name: "Web Themes",
         items: "5",
     },
     {
         id: 2,
-        cover: "../images/hero/cate-h11_2.png",
+        cover: "/src/assets/data/images/hero/2.png",
         name: "UI Design",
         items: "12",
     },
     {
         id: 3,
-        cover: "../images/hero/cate-h11_3.png",
+        cover: "/src/assets/data/images/hero/3.png",
         name: "3D Models",
         items: "12",
     },
     {
         id: 4,
-        cover: "../images/hero/cate-h11_5.png",
+        cover: "/src/assets/data/images/hero/4.png",
         name: "Image Stock",
         items: "15",
     },
     {
         id: 5,
-        cover: "../images/hero/cate-h11.png",
+        cover: "/src/assets/data/images/hero/5.png",
         name: "Mockup Design",
         items: "7",
     },

@@ -9,10 +9,10 @@ export default function Pages() {
     return (
         <>
             <Header />
-            {/* <Routes>
+            <Routes>
                 <Route exact path="/" element={<Home />} />
             </Routes>
-            <Footer /> */}
+            {/* <Footer /> */}
         </>
     )
 }
