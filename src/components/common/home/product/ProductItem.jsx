@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { AiOutlineHeart } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineHeart } from 'react-icons/ai'
 import { FiSearch, FiShoppingBag } from 'react-icons/fi'
 
 export default function ProductItem({ data }) {
@@ -8,6 +8,10 @@ export default function ProductItem({ data }) {
     const [openImage, setOpenImage] = useState(false)
     const [img, setImg] = useState("")
 
+    const onOpenImage = (src) => {
+        setImg(src)
+        setOpenImage(true)
+    }
 
     return (
         <>
@@ -23,7 +27,7 @@ export default function ProductItem({ data }) {
                                 <button className="button">
                                     <AiOutlineHeart />
                                 </button>
-                                <button className="button">
+                                <button className="button" onClick={() => onOpenImage(items.cover)}>
                                     <FiSearch />
                                 </button>
                             </div>
@@ -35,7 +39,16 @@ export default function ProductItem({ data }) {
                         </div>
                     </div>
                 ))}
-            </div >
+            </div>
+
+            <div className={openImage ? "modelOpen" : "modelClose"}>
+                <div className="onClickImage">
+                    <img src={img} />
+                    <button className="button" onClick={() => setOpenImage(false)}>
+                        <AiOutlineClose />
+                    </button>
+                </div>
+            </div>
         </>
     )
 }
