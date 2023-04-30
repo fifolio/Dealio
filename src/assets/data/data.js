@@ -132,17 +132,15 @@ export const products = [
 export const banner = [
     {
         id: 1,
-        title1: "Simple IPhone ",
-        title2: "Mockups Design PSD, Ai, EPS",
+        title: "Mockups Design PSD, Ai, EPS",
         desc: "Sale 30% Off For Members",
-        cover: "../images/banner/b2.png",
+        cover: "/src/assets/data/images/banner/1.png",
     },
     {
         id: 2,
-        title1: "Mockup PSD",
-        title2: "50+ Ui Screen Mockups",
+        title: "50+ Ui Screen Mockups",
         desc: "Sale 30% Off For Members",
-        cover: "../images/banner/b1.png",
+        cover: "/src/assets/data/images/banner/2.png",
     },
 ]
 export const topProducts = [
