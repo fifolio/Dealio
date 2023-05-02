@@ -11,6 +11,17 @@ export default function TopProduct() {
 
     const [category, setCategory] = useState(allCategories)
 
+    const handleFillter = (category) => {
+        console.log("----->", category)
+        const newItem = topProducts.filter((item) => item.category === category)
+        setData(newItem)
+
+        if (category === "all") {
+            setData(topProducts)
+            return
+        }
+    }
+
     return (
         <>
             <section className="topproduct">
@@ -19,7 +30,7 @@ export default function TopProduct() {
                         <Heading title="Top Selling Products" desc="Meet our newbies! The latest templates uploaded to the marketplace. " />
                         <div className="category">
                             {category.map((category) => (
-                                <button className="button">
+                                <button className="button" onClick={() => handleFillter(category)}>
                                     {category}
                                 </button>
                             ))}
