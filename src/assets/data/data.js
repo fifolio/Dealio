@@ -227,27 +227,27 @@ export const price = [
         list: [
             {
                 para: "Demo Content Install",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Theme Updates",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Support And Updates",
-                icon: '<AiOutlineClose />',
+                icon: '✖️',
             },
             {
                 para: "Access All Themes",
-                icon: '<AiOutlineClose />',
+                icon: '✖️',
             },
             {
                 para: "All Themes For Life",
-                icon: '<AiOutlineClose />',
+                icon: '✖️',
             },
             {
                 para: "30 Days Money Back",
-                icon: '<AiOutlineClose />',
+                icon: '✖️',
             },
         ],
     },
@@ -259,27 +259,27 @@ export const price = [
         list: [
             {
                 para: "Demo Content Install",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Theme Updates",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Support And Updates",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Access All Themes",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "All Themes For Life",
-                icon: '<AiOutlineClose />',
+                icon: '✖️',
             },
             {
                 para: "30 Days Money Back",
-                icon: '<AiOutlineClose />',
+                icon: '✖️',
             },
         ],
     },
@@ -291,27 +291,27 @@ export const price = [
         list: [
             {
                 para: "Demo Content Install",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Theme Updates",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Support And Updates",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "Access All Themes",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "All Themes For Life",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
             {
                 para: "30 Days Money Back",
-                icon: '<FcCheckmark />',
+                icon: '✔️',
             },
         ],
     },
