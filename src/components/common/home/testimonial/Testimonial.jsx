@@ -9,7 +9,7 @@ export default function Testimonial() {
 
             <div className="content">
                 {customer.map((items) => (
-                    <div className="box">
+                    <div className="card">
                         <button>
                             <ImQuotesRight />
                         </button>
