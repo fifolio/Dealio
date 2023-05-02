@@ -129,7 +129,7 @@ p {
 footer {
   text-align: center;
   @include pa_ma($xl-2, $large 0 0 0);
-  background: $dark;
+  //background: $dark;
   p {
     color: $light;
   }

@@ -12,7 +12,7 @@ export default function Pages() {
             <Routes>
                 <Route exact path="/" element={<Home />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
