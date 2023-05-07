@@ -8,8 +8,8 @@ export default function Price() {
                 <Heading title="Choose The Plans" desc="Meet our newbies! The latest templates uploaded to the marketplace" />
 
                 <div className="content">
-                    {price.map((item) => (
-                        <div className="box">
+                    {price.map((item, i) => (
+                        <div className="box" key={i}>
                             <h3>{item.name}</h3>
                             <h1>
                                 <span>$</span>
@@ -22,8 +22,8 @@ export default function Price() {
                             </button>
 
                             <ul>
-                                {item.list.map((lists) => (
-                                    <li>
+                                {item.list.map((lists, i) => (
+                                    <li key={i}>
                                         <span>{lists.icon} </span>
                                         <span>{lists.para}</span>
                                     </li>

@@ -8,8 +8,8 @@ export default function Testimonial() {
             <Heading title="Choose The Plan" desc='Meet our newbies! The latest templates uploaded to the marketplace.' />
 
             <div className="content">
-                {customer.map((items) => (
-                    <div className="card">
+                {customer.map((items, i) => (
+                    <div className="card" key={i}>
                         <button>
                             <ImQuotesRight />
                         </button>

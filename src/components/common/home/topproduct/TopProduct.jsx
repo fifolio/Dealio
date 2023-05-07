@@ -29,8 +29,8 @@ export default function TopProduct() {
                     <div className="head">
                         <Heading title="Top Selling Products" desc="Meet our newbies! The latest templates uploaded to the marketplace. " />
                         <div className="category">
-                            {category.map((category) => (
-                                <button className="button" onClick={() => handleFillter(category)}>
+                            {category.map((category, i) => (
+                                <button key={i} className="button" onClick={() => handleFillter(category)}>
                                     {category}
                                 </button>
                             ))}

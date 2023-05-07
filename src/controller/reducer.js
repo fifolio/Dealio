@@ -4,7 +4,7 @@ const initialStore = {
     carts: [],
 }
 
-export const cartReucer = (state = initialStore, action) => {
+export const cartReducer = (state = initialStore, action) => {
     switch (action) {
         case ADD_CART:
             return {

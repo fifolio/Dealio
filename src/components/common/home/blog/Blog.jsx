@@ -8,8 +8,8 @@ export default function Blog() {
                 <Heading title="LATEST BLOG POSTS" desc="Latest marketplace news, success stories and tutorials" />
 
                 <div className="posts">
-                    {blog.slice(0, 3).map((items) => (
-                        <div className='post'>
+                    {blog.slice(0, 3).map((items, i) => (
+                        <div className='post' key={i}>
                             <div className="content">
                                 <div className="img">
                                     <img src={items.cover} alt="" />

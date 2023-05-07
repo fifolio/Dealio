@@ -34,8 +34,8 @@ export default function Header() {
                         </div>
                         <div className="center">
                             <ul className={mobile ? "mobile-nav" : "menu"}>
-                                {navlist.map((nav, i) => (
-                                    <li key={i}>
+                                {navlist.map((nav, index) => (
+                                    <li key={index}>
                                         <Link to={nav.path}>
                                             {nav.text}
                                         </Link>

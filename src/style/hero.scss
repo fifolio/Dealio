@@ -9,7 +9,7 @@
   &::after {
     content: "";
     @include positions(absolute, 50px, none, 0, none, 130%, 100vh);
-    background-image: url("../components/assets/images/bg-dot.png");
+    // background-image: url("../components/assets/images/bg-dot.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
