@@ -6,7 +6,7 @@ import { RiUser3Line } from 'react-icons/ri';
 import { AiOutlineClose, AiOutlineHeart, AiOutlineMenu } from 'react-icons/ai';
 import logo from "../assets/images/logo.png";
 import { useState } from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { connect, useSelector } from "react-redux";
 
 export default function Header() {
 
@@ -79,8 +79,7 @@ export default function Header() {
 
 const mapStateToProps = (state) => {
     return {
-        amount: state.amount
+        amount: state.amount,
     }
 }
-
 connect(mapStateToProps)(Header)
