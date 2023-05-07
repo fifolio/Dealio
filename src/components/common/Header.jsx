@@ -25,6 +25,11 @@ export default function Header() {
     const getdata = useSelector((state) => state.cartReducer.carts)
     console.log(getdata);
 
+    const [cartList, setCartList] = useState(false);
+
+    const handleClose = () => {
+        setCartList(null)
+    }
 
 
     return (
@@ -64,10 +69,27 @@ export default function Header() {
                             <AiOutlineHeart className='userIcon heIcon' />
                         </div>
                         <div className="right_card">
-                            <button className="button">
+                            <button className="button" onClick={() => setCartList(!cartList)}>
                                 <BsBagCheck className="shop heIcon" />
                                 MY CART ({getdata.length})
                             </button>
+                            <div className={cartList ? 'showCart' : 'hideCart'}>
+                                {getdata.length ? (
+                                    <section className="details">
+                                        <div className="details_title">
+                                            <h3>Photo</h3>
+                                            <p>Product Name</p>
+                                        </div>
+                                    </section>
+                                ) : (
+                                    <div className="empty">
+                                        <p>
+                                            Your Cart is Empty
+                                        </p>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/5400/5400905.png" alt="empty cart" />
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div >
