@@ -6,6 +6,7 @@ import { RiUser3Line } from 'react-icons/ri';
 import { AiOutlineClose, AiOutlineHeart, AiOutlineMenu } from 'react-icons/ai';
 import logo from "../assets/images/logo.png";
 import { useState } from "react";
+import { connect, useDispatch, useSelector } from "react-redux";
 
 export default function Header() {
 
@@ -16,6 +17,15 @@ export default function Header() {
     })
 
     const [mobile, setMobile] = useState(false)
+
+
+
+    // Cart add in shop
+
+    const getdata = useSelector((state) => state.cartReducer.carts)
+    console.log(getdata);
+
+
 
     return (
         <>
@@ -58,9 +68,6 @@ export default function Header() {
                                 <BsBagCheck className="shop heIcon" />
                                 MY CART (0)
                             </button>
-
-
-
                         </div>
                     </div>
                 </div >
@@ -68,3 +75,12 @@ export default function Header() {
         </>
     )
 }
+
+
+const mapStateToProps = (state) => {
+    return {
+        amount: state.amount
+    }
+}
+
+connect(mapStateToProps)(Header)

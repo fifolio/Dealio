@@ -1,8 +1,5 @@
 import { ADD_CART } from "./type";
-
-const initialStore = {
-    carts: [],
-}
+import initialStore from "./initialStore";
 
 export const cartReducer = (state = initialStore, action) => {
     switch (action) {
