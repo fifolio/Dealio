@@ -66,7 +66,7 @@ export default function Header() {
                         <div className="right_card">
                             <button className="button">
                                 <BsBagCheck className="shop heIcon" />
-                                MY CART (0)
+                                MY CART ({getdata.length})
                             </button>
                         </div>
                     </div>
