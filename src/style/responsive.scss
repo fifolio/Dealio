@@ -81,7 +81,7 @@
   }
   .banner {
     .posts {
-      @include grid(repeat(1, 1fr), 50px);
+      @include grid(repeat(1, 1fr), 30px);
     }
   }
   .price {

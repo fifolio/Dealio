@@ -27,13 +27,15 @@ export default function Header() {
                                 {mobile ? <AiOutlineClose className="close heIcon" /> : <AiOutlineMenu className="open heIcon" />}
                             </button>
                         </div>
-                        <div className=" left">
-                            <img src={logo} alt="" />
+                        <div className="left">
+                            <Link to="/">
+                                <img src={logo} alt="logo" />
+                            </Link>
                         </div>
                         <div className="center">
                             <ul className={mobile ? "mobile-nav" : "menu"}>
-                                {navlist.map((nav, index) => (
-                                    <li key={index}>
+                                {navlist.map((nav, i) => (
+                                    <li key={i}>
                                         <Link to={nav.path}>
                                             {nav.text}
                                         </Link>
