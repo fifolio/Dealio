@@ -7,6 +7,7 @@ import { AiOutlineClose, AiOutlineDelete, AiOutlineHeart, AiOutlineMenu } from '
 import logo from "../assets/images/logo.png";
 import { useState } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
+import { DELETE } from "../../controller/action";
 
 export default function Header() {
 
@@ -28,10 +29,10 @@ export default function Header() {
         setCartList(null)
     }
 
-    // const dispatch = useDispatch()
-    // const remove = (id) => {
-    //     dispatch(DELETE(id))
-    // }
+    const dispatch = useDispatch()
+    const remove = (id) => {
+        dispatch(DELETE(id))
+    }
 
 
     return (

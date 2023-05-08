@@ -1,8 +1,3 @@
-// return {
-//     ...state,
-//     carts: [...state.carts, action.payload]
-// }
-
 import { ADD_CART, REMOVE } from "./type";
 
 const initialStore = {
@@ -26,7 +21,7 @@ export const cartReducer = (state = initialStore, action) => {
             const data = state.carts.filter((item) => item.id !== action.payload)
             return {
                 ...state,
-                carts: data
+                carts: data,
             }
 
         default:
