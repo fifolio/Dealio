@@ -5,7 +5,7 @@ import { BsBagCheck } from 'react-icons/bs'
 import { RiUser3Line } from 'react-icons/ri';
 import { AiOutlineClose, AiOutlineDelete, AiOutlineHeart, AiOutlineMenu } from 'react-icons/ai';
 import logo from "../assets/images/logo.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { DELETE } from "../../controller/action";
 
@@ -33,6 +33,21 @@ export default function Header() {
     const remove = (id) => {
         dispatch(DELETE(id))
     }
+
+
+    // total price
+    const [price, setPrice] = useState(0)
+    const totals = () => {
+        let price = 0;
+        getData.map((item, index) => {
+            price = parseInt(item.price) * item.qty + price
+        })
+        setPrice(price)
+    }
+
+    useEffect(() => {
+        totals()
+    }, [totals])
 
 
     return (
@@ -107,7 +122,7 @@ export default function Header() {
                                             </div>
                                         ))}
                                         <div className="details_total">
-                                            <h4>Total : $30</h4>
+                                            <h4>Total : ${price}</h4>
                                         </div>
                                     </section>
                                 ) : (
