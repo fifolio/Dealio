@@ -6,7 +6,7 @@ import { RiUser3Line } from 'react-icons/ri';
 import { AiOutlineClose, AiOutlineDelete, AiOutlineHeart, AiOutlineMenu } from 'react-icons/ai';
 import logo from "../assets/images/logo.png";
 import { useState } from "react";
-import { connect, useSelector } from "react-redux";
+import { connect, useDispatch, useSelector } from "react-redux";
 
 export default function Header() {
 
@@ -21,15 +21,17 @@ export default function Header() {
 
 
     // Cart add in shop
-
-    const getdata = useSelector((state) => state.cartReducer.carts)
-    console.log(getdata);
+    const getData = useSelector((state) => state.cartReducer.carts)
 
     const [cartList, setCartList] = useState(false);
-
     const handleClose = () => {
         setCartList(null)
     }
+
+    // const dispatch = useDispatch()
+    // const remove = (id) => {
+    //     dispatch(DELETE(id))
+    // }
 
 
     return (
@@ -71,16 +73,18 @@ export default function Header() {
                         <div className="right_card">
                             <button className="button" onClick={() => setCartList(!cartList)}>
                                 <BsBagCheck className="shop heIcon" />
-                                MY CART ({getdata.length})
+                                <b>
+                                    MY CART {getData.length ? `( ${getData.length} )` : ''}
+                                </b>
                             </button>
                             <div className={cartList ? 'showCart' : 'hideCart'}>
-                                {getdata.length ? (
+                                {getData.length ? (
                                     <section className="details">
                                         <div className="details_title">
                                             <h3>Photo</h3>
                                             <p>Product Name</p>
                                         </div>
-                                        {getdata.map((item) => (
+                                        {getData.map((item) => (
                                             <div className="details_content">
                                                 <div className="details_content_img">
                                                     <Link to={`/cart/${item.id}`} onClick={handleClose}>
@@ -95,7 +99,7 @@ export default function Header() {
                                                     </div>
                                                 </div>
                                                 <div className="details_content_detail_icon">
-                                                    <i>
+                                                    <i onClick={() => remove(item.id)}>
                                                         <AiOutlineDelete />
                                                     </i>
                                                 </div>
