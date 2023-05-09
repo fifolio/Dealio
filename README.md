@@ -2,7 +2,7 @@
 <p class="has-line-data" data-line-start="5" data-line-end="6">Dealio is an e-Commerce web app built with Redux which is an open-source JavaScript library for managing and centralizing application state. This project is nothing but a showcase for Redux toolkit and its abilities of state management across the entire website.</p>
 
 <h2 class="code-line" data-line-start=7 data-line-end=8 ><a id="Installation_7"></a>Installation</h2>
-<p class="has-line-data" data-line-start="8" data-line-end="9">To get started with News Brain, you’ll need to clone this repository to your local machine:</p>
+<p class="has-line-data" data-line-start="8" data-line-end="9">To get started with Dealio, you’ll need to clone this repository to your local machine:</p>
 <pre><code class="has-line-data" data-line-start="11" data-line-end="13" class="language-sh">git <span class="hljs-built_in">clone</span><a href="https://github.com/fifolio/Dealio.git "> https://github.com/fifolio/Dealio.git</a>
 </code></pre>
 <p class="has-line-data" data-line-start="13" data-line-end="14">Once you have the repository on your local machine, navigate to the project directory and install the necessary dependencies:</p>
@@ -15,11 +15,10 @@ npm install
 <p class="has-line-data" data-line-start="24" data-line-end="25">Once the app is running, you can start contibute. See the <strong>Features</strong> section below for more information on what you can do with News Brain.</p>
 <h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="Features_26"></a>Features</h2>
 <ul>
-<li class="has-line-data" data-line-start="27" data-line-end="28">Get the latest news and information from a variety of sources</li>
-<li class="has-line-data" data-line-start="28" data-line-end="29">Browse Commands cards to know what you can play with</li>
-<li class="has-line-data" data-line-start="29" data-line-end="30">Open any article by saying its number, for example: “Open the article number 2”</li>
-<li class="has-line-data" data-line-start="30" data-line-end="33">You can give the A.I a confirmation to read the news headlines for you!<br>
-and much more I’ll let you to explore…</li>
+<li class="has-line-data" data-line-start="27" data-line-end="28">Add Product to Cart</li>
+<li class="has-line-data" data-line-start="28" data-line-end="29">Increment the number of items in Cart</li>
+<li class="has-line-data" data-line-start="29" data-line-end="30">Also decrement the Number of items in Cart</li>
+<li class="has-line-data" data-line-start="30" data-line-end="33">Delete, and Add functionallity</li>
 </ul>
 <h2 class="code-line" data-line-start=33 data-line-end=34 ><a id="Technologies_Used_33"></a>Technologies Used</h2>
 <p class="has-line-data" data-line-start="34" data-line-end="35">News Brain is built using the following technologies:</p>
