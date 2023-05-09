@@ -28,4 +28,4 @@ npm install
 <li class="has-line-data" data-line-start="38" data-line-end="39">Redux toolkit</li>
 </ul>
 <h2 class="code-line" data-line-start=42 data-line-end=43 ><a id="Contributing_42"></a>Contributing</h1>
-<p class="has-line-data" data-line-start="43" data-line-end="44">If you’d like to contribute to News Brain, feel free to fork this repository and submit a pull request with your changes. Please make sure to adhere to the project’s coding standards and guidelines.</p>
+<p class="has-line-data" data-line-start="43" data-line-end="44">If you’d like to contribute to Dealio, feel free to fork this repository and submit a pull request with your changes. Please make sure to adhere to the project’s coding standards and guidelines.</p>
