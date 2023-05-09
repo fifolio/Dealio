@@ -12,7 +12,7 @@ npm install
 <h2 class="code-line" data-line-start=20 data-line-end=21 ><a id="Usage_20"></a>Usage</h2>
 <pre><code class="has-line-data" data-line-start="22" data-line-end="24" class="language-sh">npm run dev
 </code></pre>
-<p class="has-line-data" data-line-start="24" data-line-end="25">Once the app is running, you can start contibute. See the <strong>Features</strong> section below for more information on what you can do with News Brain.</p>
+<p class="has-line-data" data-line-start="24" data-line-end="25">Once the app is running, you can start contibute. See the <strong>Features</strong> section below for more information on what you can do with Dealio.</p>
 <h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="Features_26"></a>Features</h2>
 <ul>
 <li class="has-line-data" data-line-start="27" data-line-end="28">Add Product to Cart</li>
