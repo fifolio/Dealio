@@ -1,5 +1,3 @@
-<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="News_Brain_0"></a>News Brain</h1>
-<h5 class="code-line" data-line-start=1 data-line-end=2 ><a id="_the_ultimate_source_for_uptodate_news_from_around_the_world__1"></a><em>“the ultimate source for up-to-date news from around the world”</em></h5>
 <p class="has-line-data" data-line-start="3" data-line-end="4"><img width="100%" height="100%" src="https://i.ibb.co/HYwJTPv/dealio.png" alt="N|Solid"></p>
 <p class="has-line-data" data-line-start="5" data-line-end="6">News Brain is an Artificial Intelligence React News Application that uses Alan AI, a speech recognition software, to allow users to control everything in the app using their voice. With News Brain, users can get up-to-date news and information in a hands-free and convenient way.</p>
 
