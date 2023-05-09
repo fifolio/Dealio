@@ -21,7 +21,7 @@ npm install
 <li class="has-line-data" data-line-start="30" data-line-end="33">Delete, and Add functionallity</li>
 </ul>
 <h2 class="code-line" data-line-start=33 data-line-end=34 ><a id="Technologies_Used_33"></a>Technologies Used</h2>
-<p class="has-line-data" data-line-start="34" data-line-end="35">News Brain is built using the following technologies:</p>
+<p class="has-line-data" data-line-start="34" data-line-end="35">Dealio is built using the following technologies:</p>
 <ul>
 <li class="has-line-data" data-line-start="36" data-line-end="37">Vite</li>
 <li class="has-line-data" data-line-start="37" data-line-end="38">React</li>
