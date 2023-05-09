@@ -148,8 +148,8 @@ footer {
 
     img {
       @include flex(center, center, center);
-      width: 600px;
-      height: 600px;
+      width: 640px;
+      height: 480px;
       z-index: 99999;
     }
     .button {

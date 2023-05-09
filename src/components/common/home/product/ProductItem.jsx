@@ -18,7 +18,6 @@ export default function ProductItem({ data }) {
     const dispatch = useDispatch()
 
     const addToCart = (e) => {
-        console.log('clicked to add');
         dispatch(ADD(e))
     }
 
