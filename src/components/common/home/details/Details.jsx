@@ -73,7 +73,7 @@ export default function Details() {
                                             <AiOutlineMinus />
                                         </button>
                                     </div>
-                                    <button className="button">Add to Cart</button>
+                                    <button className="button"><b>Buy Now</b></button>
                                 </div>
                                 <div className="desc">
                                     <h4>PRODUCT DESCRIPTION</h4>
