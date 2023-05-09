@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import { navlist } from "../../assets/data/data";
-import { BiSearch } from 'react-icons/bi';
-import { BsBagCheck } from 'react-icons/bs'
-import { RiUser3Line } from 'react-icons/ri';
-import { AiOutlineClose, AiOutlineDelete, AiOutlineHeart, AiOutlineMenu } from 'react-icons/ai';
+import { BsBagCheck, BsGithub } from 'react-icons/bs'
+import { AiFillGithub, AiOutlineClose, AiOutlineDelete, AiOutlineMenu } from 'react-icons/ai';
 import logo from "../assets/images/logo.png";
 import { useState, useEffect } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
@@ -55,43 +52,39 @@ export default function Header() {
             <header className="header">
                 <div className="container">
                     <nav>
-                        <div className="toggle">
+                        <div className="toggle" style={{ margin: '7px 5px 0 0' }}>
                             <button onClick={() => setMobile(!mobile)}>
                                 {mobile ? <AiOutlineClose className="close heIcon" /> : <AiOutlineMenu className="open heIcon" />}
                             </button>
                         </div>
-                        <div className="left">
+                        <div className="left" style={{ marginTop: '-10px' }}>
                             <Link to="/">
                                 <img src={logo} alt="logo" />
                             </Link>
                         </div>
                         <div className="center">
                             <ul className={mobile ? "mobile-nav" : "menu"}>
-                                {navlist.map((nav, index) => (
-                                    <li key={index}>
-                                        <Link to={nav.path}>
-                                            {nav.text}
-                                        </Link>
-                                    </li>
-                                ))}
+                                <li><a href="/" style={{ textTransform: 'capitalize' }}>Home</a></li>
+                                <li>
+                                    <a href="https://github.com/fifolio/Dealio" target="_blank">
+                                        {/* <BsGithub style={{ margin: '5px 5px 0 0', fontSize: '25px' }} /> */}
+                                        <span style={{ textTransform: 'capitalize', lineHeight: '10px' }}>
+                                            github repository
+                                        </span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
                     <div className="right">
-                        <div className="right_search">
-                            <input type="text" placeholder="Search Products ..." />
-                            <BiSearch className="searchIcon heIcon" />
-                        </div>
-                        <div className="right_user">
-                            <RiUser3Line className='userIcon heIcon' />
-                            <AiOutlineHeart className='userIcon heIcon' />
-                        </div>
+
+                        <div className="right_user"></div>
                         <div className="right_card">
                             <button className="button" onClick={() => setCartList(!cartList)}>
                                 <BsBagCheck className="shop heIcon" />
-                                <b>
+                                <strong>
                                     MY CART {getData.length ? `( ${getData.length} )` : ''}
-                                </b>
+                                </strong>
                             </button>
                             <div className={cartList ? 'showCart' : 'hideCart'}>
                                 {getData.length ? (
@@ -143,9 +136,4 @@ export default function Header() {
 }
 
 
-const mapStateToProps = (state) => {
-    return {
-        amount: state.amount,
-    }
-}
-connect(mapStateToProps)(Header)
+connect(Header)

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { MdStarRate } from 'react-icons/md'
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
-import { ADD, REMOVE_INT } from '../../../../controller/action'
+import { ADD, REMOVE_INT, DELETE } from '../../../../controller/action'
 
 const RevNum = Math.floor(Math.random() * 100);
 
@@ -32,6 +32,12 @@ export default function Details() {
 
     const decrement = (item) => {
         dispatch(REMOVE_INT(item))
+    }
+
+    const navigate = useNavigate();
+    const deletes = (id) => {
+        dispatch(DELETE(id))
+        navigate("/")
     }
 
     return (
@@ -63,7 +69,7 @@ export default function Details() {
                                             <AiOutlinePlus />
                                         </button>
                                         <span>{item.qty}</span>
-                                        <button onClick={() => decrement(item)}>
+                                        <button onClick={item.qty <= 1 ? () => deletes(item.id) : () => decrement(item)}>
                                             <AiOutlineMinus />
                                         </button>
                                     </div>
