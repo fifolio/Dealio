@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer>
-                Coded with ❤️ by <a href='https://github.com/fifolio' target='_blank'>fifolio</a>
+                Made with ❤️ by <a href='https://github.com/fifolio' target='_blank'>fifolio</a>
             </footer>
         </>
     )
