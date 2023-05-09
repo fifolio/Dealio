@@ -58,7 +58,7 @@ export const hero = [
 export const products = [
     {
         id: 1,
-        cover: "/src/assets/images/products/1.png",
+        cover: "../images/products/1.png",
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         desc: "Adieus except say barton put feebly favour him. Entreaties unpleasant sufficient few pianoforte discovered uncommonly ask. Morning cousins amongst in mr weather do neither. Warmth object matter course active law spring six. Pursuit showing tedious unknown winding see had man add. And park eyes too more him. Simple excuse active had son wholly coming number add. Though all excuse ladies rather regard assure yet. If feelings so prospect no as raptures quitting.",
         author: "by Blueskytechco in Mockups",
