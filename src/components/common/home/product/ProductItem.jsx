@@ -33,9 +33,9 @@ export default function ProductItem({ data }) {
                                 <button className="button" onClick={() => addToCart(items)}>
                                     <FiShoppingBag />
                                 </button>
-                                <button className="button">
+                                {/* <button className="button">
                                     <AiOutlineHeart />
-                                </button>
+                                </button> */}
                                 <button className="button" onClick={() => onOpenImage(items.cover)}>
                                     <FiSearch />
                                 </button>

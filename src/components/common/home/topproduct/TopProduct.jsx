@@ -12,7 +12,6 @@ export default function TopProduct() {
     const [category, setCategory] = useState(allCategories)
 
     const handleFillter = (category) => {
-        console.log("----->", category)
         const newItem = topProducts.filter((item) => item.category === category)
         setData(newItem)
 
