@@ -15,9 +15,9 @@ export default function Blog() {
                                     <img src={items.cover} alt="" />
                                 </div>
                                 <div className="text">
-                                    <button className="button" style={{ marginBottom: '1px' }}>
+                                    {/* <button className="button" style={{ marginBottom: '1px' }}>
                                         {items.category}
-                                    </button>
+                                    </button> */}
                                     <p>
                                         Post Date : <span>{items.date}</span>
                                     </p>
