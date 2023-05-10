@@ -58,9 +58,9 @@
   }
 
   // card
-  .cards {
-    @include grid(repeat(3, 1fr), 30px);
-  }
+//   .cards {
+//     @include grid(repeat(3, 1fr), 30px);
+//   }
   .topproduct,
   .product {
     .product_items {
