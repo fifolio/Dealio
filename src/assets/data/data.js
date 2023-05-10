@@ -358,7 +358,7 @@ export const blog = [
         date: "October 27, 2021",
         title: "Meeting Breathtaking Beauty for  Everyday Life",
         category: "shopping",
-        cover: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
+        cover: "https://cdn.pixabay.com/photo/2013/07/07/01/21/blue-143734__480.jpg",
 
     },
     {
