@@ -176,7 +176,7 @@ export const topProducts = [
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
-        category: "web theme",
+        category: "mockups",
         qty: 0,
     },
 
@@ -186,7 +186,7 @@ export const topProducts = [
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
-        category: "web theme",
+        category: "mockups",
         qty: 0,
     },
     {
@@ -195,7 +195,7 @@ export const topProducts = [
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
-        category: "images stocks",
+        category: "icons",
         qty: 0,
     },
     {
@@ -204,7 +204,7 @@ export const topProducts = [
         title: "Floating 2021 iPhone 12 Mockups (PSD)",
         author: "by Blueskytechco in Mockups",
         price: "30.00",
-        category: "images stocks",
+        category: "mockups",
         qty: 0,
     },
     {
