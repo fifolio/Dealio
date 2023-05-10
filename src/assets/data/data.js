@@ -350,21 +350,24 @@ export const blog = [
         date: "October 27, 2021",
         title: "Transition Your Favorite Looks into  Fall France 2022",
         category: "image",
-        cover: "../images/blog/1.jpg",
+        cover: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
+
     },
     {
         id: 2,
         date: "October 27, 2021",
         title: "Meeting Breathtaking Beauty for  Everyday Life",
         category: "shopping",
-        cover: "../images/blog/2.jpg",
+        cover: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
+
     },
     {
         id: 3,
         date: "October 27, 2021",
         title: "Perfect Quality Reasonable Price for Your",
         category: "travle",
-        cover: "../images/blog/3.jpg",
+        cover: "https://i.natgeofe.com/n/263951dd-d1e2-471c-b3ab-73930a105a3a/5143751_uploadsmember227514yourshot-227514-5143751jpg_ti36r6tdxfee2jlr73b6gmqr7uzxs2udwatjavjxeftgooyp4jfa_5472x3648.jpg",
+
     },
     {
         id: 4,
