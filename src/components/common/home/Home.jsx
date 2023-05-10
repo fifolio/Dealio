@@ -13,7 +13,7 @@ export default function Home() {
             <Hero />
             <Card />
             <Product />
-            <Banner />
+             {/* <Banner /> */}
             <TopProduct />
             <Price />
             <Testimonial />
